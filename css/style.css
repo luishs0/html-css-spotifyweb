@@ -3,3 +3,92 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+img {
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+}
+
+.flexbox {
+    display: flex;
+}
+
+/* CUSTOM PROPERTIES -------*/
+:root {
+    --player-height: 100px;
+    --header-height: 80px;
+    --slidebar-width: 200px;
+}
+/* /CUSTOM PROPERTIES ------- */
+
+
+/* HEADER */
+
+.header {
+    width: calc(100% - var(--slidebar-width));
+    height: var(--header-height);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: var(--slidebar-width);
+
+    /* DEBUG */
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* /HEADER */
+
+
+/* MAIN */
+
+/* content */
+
+/* slidebar */
+
+.slidebar {
+    width: var(--slidebar-width);
+    height: calc(100vh - var(--player-height));
+    z-index: 999;
+
+    /* DEBUG */
+    background-color: blanchedalmond;
+}
+
+/* /slidebar */
+
+
+
+/* main-content */
+
+.main-content {
+    width: calc(100% - var(--slidebar-width));
+    height: calc(100vh - var(--player-height));
+    overflow: auto;
+    padding-top: var(--header-height);
+
+    /* DEBUG */
+    background-color: brown;
+}
+
+/* main-content */
+
+/* /content */
+
+
+/* player */
+
+.player {
+    width: 100%;
+    height: var(--player-height);
+
+    /* DEBUG */
+    background-color: gray;
+}
+
+/* /player */
+
+/* /MAIN */
