@@ -32,20 +32,25 @@
             <div class="slidebar flexbox">
 
                 <div class="logo flexbox">
-                    <img src="img/logo.svg" alt="">
+                    <img class="logo-large" src="img/logo.svg" alt="">
+                    <img class="logo-small" src="img/logo-small.svg" alt="">
                 </div>
 
 
                 <div class="bar">
                     
                     <ul class="slidebar-menu">
-                        <li>Home</li>
-                        <li>Cerca</li>
-                        <li>La tua libreria</li>
+                        <li><a class="home" href=""><img  src="img/home.svg" alt=""> Home</a> <a class="home-xs" href=""><img class="" src="img/home.svg" alt=""></a>  </li>
+                        <li><a class="search" href=""><img src="img/search.svg" alt=""> Cerca</a> <a class="search-xs" href=""><img src="img/search.svg" alt=""> </a> </li>
+                        <li class="libreria"><a class="libreria1" href=""><img  src="img/libreria.svg" alt=""> La tua libreria</a> <a class="libreria1-xs" href=""><img src="img/libreria.svg" alt=""></a> </li>
                         <li class="playlist">
-                            Playlist
+                            <a href=""><strong>PLAYLIST</strong></a>
+                        
                             <ul class="playlist-list">
-                                <li class="crea-playlist">Crea playlist</li>
+                                <li Crea class="crea-playlist">
+                                    <a href=""><i class="plus fa-regular fa-square-plus"></i>
+                                    Crea playlist </a>
+                                </li>
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li>
@@ -61,10 +66,12 @@
 
 
                 <div class="slidebar-footer flexbox">
-                    <p>Installa app</p>
+                    <p class="cta"><img class="download" src="img/download.svg" alt=""> <span>Installa app</span> </p>
                     <hr>
-                    <p class="nome">John Doe</p>
+                    <p class="nome"> <img class="profile" src="img/profile.svg" alt=""> <span>John Doe</span> </p>
                 </div>
+
+
 
             </div>
 
@@ -81,17 +88,64 @@
         <div class="player flexbox">
 
 
-            <div class="player-left">
+            <!-- Player-left -->
+            <div class="player-left flexbox">
+
+                <div class="player-left-data flexbox">
+                    
+                    <div class="player-left-data-img">
+                        <img src="img/sinister.jpeg" alt="">
+                    </div>
+                    <div class="player-left-data-text">
+                        <p class="pointer">Sinister</p>
+                        
+                        <span class="pointer">Brano nome</span>
+                    </div>
+
+                </div>
+
+
+                <div class="player-left-icons flexbox">
+                    <i class="pointer fa-regular fa-heart"></i>
+                    <i class="pointer fa-regular fa-folder"></i>
+                </div>
 
             </div>
+            <!-- /Player-left -->
 
 
             <div class="player-mid">
 
+                <div class="player-mid-icons">
+
+                    <i class="pointer fa-solid fa-forward"></i>
+                    <i class="pointer fa-solid fa-backward-step"></i>
+                    <i class="pointer fa-regular fa-circle-play play"></i>
+                    <i class="pointer fa-solid fa-forward-step"></i>
+                    <i class="pointer fa-solid fa-rotate-right"></i>
+
+                </div>
+
+
+                <div class="timebar">
+
+                    <span class="start-time">0:25</span>
+
+                    <span class="timebar-bar"></span>
+
+                    <span class="end-time">4:35</span>
+
+                </div>
+
             </div>
 
 
-            <div class="player-right">
+            <div class="player-right flexbox">
+
+                <i class="pointer fa-solid fa-list"></i>
+                <i class="pointer fa-solid fa-desktop"></i>
+                <i class="pointer fa-solid fa-volume-high"></i>
+                <span class="volume-bar"></span>
 
             </div>
 
