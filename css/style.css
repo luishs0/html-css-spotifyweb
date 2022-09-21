@@ -22,6 +22,7 @@ body {
     --player-height: 100px;
     --header-height: 80px;
     --slidebar-width: 200px;
+    --slidebar-footer-height: 10%;
 }
 /* /CUSTOM PROPERTIES ------- */
 
@@ -53,9 +54,34 @@ body {
     width: var(--slidebar-width);
     height: calc(100vh - var(--player-height));
     z-index: 999;
+    flex-direction: column;
 
     /* DEBUG */
-    background-color: blanchedalmond;
+    background-color: gray;
+}
+
+.slidebar .logo {
+    height: var(--header-height);
+    line-height: var(--header-height);
+    align-items: center;
+    justify-content: center;
+}
+
+.slidebar .logo img {
+    width: 80%;
+} 
+
+.bar {
+    overflow: auto;
+    color: white;
+    height: calc(100% - var(--header-height) - var(--slidebar-footer-height));
+}
+
+.slidebar-footer {
+    color: white;
+    height: var(--slidebar-footer-height);
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 /* /slidebar */
@@ -84,9 +110,37 @@ body {
 .player {
     width: 100%;
     height: var(--player-height);
+    justify-content: space-between;
 
     /* DEBUG */
     background-color: gray;
+}
+
+.player-left {
+    width: 20%;
+    height: 100%;
+
+    /* DEBUG */
+    background-color: blueviolet;
+    border: 2px solid black;
+}
+
+.player-right {
+    width: 20%;
+    height: 100%;
+
+    /* DEBUG */
+    background-color: blueviolet;
+    border: 2px solid black;
+}
+
+.player-mid {
+    width: 50%;
+    height: 100%;
+
+    /* DEBUG */
+    background-color: blueviolet;
+    border: 2px solid black;
 }
 
 /* /player */
