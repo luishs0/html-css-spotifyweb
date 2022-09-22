@@ -237,7 +237,7 @@ img {
 
 /* Player left */
 .player-left {
-    width: 20%;
+    width: 250px;
     height: 100%;
 }
 
@@ -247,7 +247,7 @@ img {
 }
 
 .player-left-data-img {
-    width: 25%;
+    width: 50px;
     margin-left: .4rem;
 }
 
@@ -279,7 +279,7 @@ img {
 
 /* player-right */
 .player-right {
-    width: 20%;
+    width: 250px;
     height: 100%;
     color: white;
     align-items: center;
@@ -351,10 +351,83 @@ img {
 }
 /* /player-mid */
 
-
-
-
 /* /player */
+
+
+/* Content */
+
+.main-content-container {
+    padding: 1rem;
+}
+
+.main-content {
+    color: white;
+}
+
+.main-content h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+nav {
+    width: 60%;
+    margin: 1rem auto;
+}
+
+nav ul {
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: .7rem;
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.albums-1 {
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.albums-2 {
+    justify-content: flex-start;
+    gap: .9rem;
+    margin-bottom: 2rem;
+}
+
+.albums-3 {
+    justify-content: flex-start;
+    gap: .9rem;
+    margin-bottom: 2rem;
+}
+
+.album-recently-img .tondo{
+    border-radius: 50%;
+}
+
+
+.album-recently {
+    width: calc(100% / 6 - .9rem);
+}
+
+
+.album-recently-text {
+    text-align: center;
+}
+
+.name-album {
+    font-size: .9rem;
+    margin-top: .4rem;
+}
+
+.subtitle-album {
+    font-size: .6rem;
+    margin-top: .3rem;
+}
+
+/* /content */
 
 /* /MAIN */
 
@@ -364,7 +437,11 @@ img {
 
     /* PLAYER ----------------------------------*/
     .player-mid {
-        width: 50%;
+        width: 40%;
+    }
+
+    .player-left, .player-right {
+        width: 25%;
     }
 
     .player-mid-icons {
@@ -387,8 +464,25 @@ img {
         width: 45%;
     }
 
-    .player-left, .player-right {
-        width: 25%;
+    .player-left-data-text p, .player-left-data-text span {
+        font-size: .6rem;
+    }
+
+    .player-left-icons {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .player-left-icons i:last-child {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .player-left-icons i {
+        font-size: .6rem;
+    }
+
+    .player-right i {
         font-size: .6rem;
     }
     /* /PLAYER */
