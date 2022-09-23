@@ -679,6 +679,29 @@ nav ul li a {
     }
 }
 
+@media screen and (max-width: 334px) {
+    .player-mid-icons i {
+        margin-right: .2rem;
+        font-size: .7rem;
+    }
+
+    .player-mid-icons i:not(:last-child) {
+        margin-right: .2rem;
+    }
+
+    .timebar .start-time, .timebar .end-time {
+        font-size: .45rem;
+    }
+
+    .timebar .start-time {
+        margin-right: .15rem;
+    }
+
+    .timebar .end-time {
+        margin-left: .15rem;
+    }
+}
+
 
 /* HOVER */
 
