@@ -55,20 +55,21 @@ img {
 }
 
 .header a {
-    color: white;
+    color: rgba(255, 255, 255, .7);
     text-decoration: none;
-    border: 1.5px solid white;
+    border: 1.5px solid rgba(255, 255, 255, .7);
     padding: .6rem 1.4rem;
     border-radius: 20px;
     float: right;
     margin: 20px 0;
-    margin-right: 10px;
+    margin-right: 2.5rem;
     font-size: .8rem;
 }
 
 .header a:hover {
-    color: green;
-    border: 1.5px solid green;
+    color: white;
+    border: 1.5px solid white;
+    transform: scale(1.05);
 }
 
 /* /HEADER */
@@ -119,12 +120,17 @@ img {
 
 .slidebar-menu li a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, .5);
 }
 
 .slidebar-menu li a img {
     width: 12%;
     vertical-align: middle;
+    opacity: .5;
+}
+
+.slidebar-menu li a img:hover {
+    opacity: 1;
 }
 
 .slidebar-menu .playlist a {
@@ -162,7 +168,7 @@ img {
 }
 
 .slidebar-menu li a:hover {
-    color: green;
+    color: rgba(255, 255, 255, 1);
 }
 
 .plus {
@@ -221,7 +227,8 @@ img {
     background-color: #141922;
 }
 
-/* main-content */
+
+/* /main-content */
 
 /* /content */
 
@@ -267,7 +274,7 @@ img {
 }
 
 .player-left-icons {
-    color: white;
+    color: rgba(255, 255, 255, .5);
     align-items: center;
     width: 30%;
 }
@@ -358,6 +365,7 @@ img {
 
 .main-content-container {
     padding: 1rem;
+    max-width: 1400px;
 }
 
 .main-content {
@@ -383,8 +391,9 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, .5);
 }
+
 
 .albums-1 {
     justify-content: space-between;
@@ -629,6 +638,60 @@ nav ul li a {
     /* CONTENT------------------------- */
     /* /CONTENT */
 }
+
+/* HOVER */
+
+.main-content nav ul li a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.playlist ul li:not(:first-child):hover {
+    color: white;
+    cursor: pointer;
+}
+
+.slidebar-footer .cta span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.player-left-data .player-left-data-text .pointer:last-child:hover {
+    text-decoration: underline;
+}
+
+.player-left-icons i:hover {
+    color: white;
+}
+
+.album-recently-img:hover img {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.album-recently-img {
+    position: relative;
+}
+
+.playhover {
+    font-size: 3.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: rgba(255, 255, 255, 2);
+    cursor: pointer;
+}
+
+.album-recently-img:hover .playhover {
+    display: block;
+}
+
+.player-mid .player-mid-icons .fa-circle-play:hover {
+    transform: scale(1.1);
+}
+
+
 
 
 
